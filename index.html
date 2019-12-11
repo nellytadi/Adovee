@@ -17,29 +17,46 @@
 
 
 
-        .first-section {
+        .home-section {
 
             background: #fafafa url(img/landing-image.png) no-repeat;
             height: 650px;
-            position: absolute;
             width: 100%;
         }
 
-        .first-section .section-content {
+        .home-section .section-content {
             position: relative;
             text-align: center;
             top: 10%;
         }
 
-        .first-section .section-content h1 {
+        .home-section .section-content h1 {
             font-weight: bold;
             font-size: 54px;
         }
 
-        .first-section .section-content .sub-content {
+        .home-section .section-content .sub-content {
             margin-top: 20px;
         }
-
+        .about-section{
+            margin-top: 70px;
+        }
+.section-heading {
+    color: #0B3C81;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.bold-prg{
+    font-size: 24px;
+font-weight: bold;
+}
+.prg{
+    font-size: 20px;
+line-height: 38px;
+padding-top: 20px;
+}
         .button {
             padding: 10px 30px;
             border: none;
@@ -93,11 +110,17 @@
 
             }
         }
+        @media(max-width: 768px){
+            .padding-30{
+            padding: 30px;
+        }
+        }
+        
     </style>
 </head>
 <body>
 <section id="home">
-    <div class="first-section">
+    <div class="home-section">
 
         <nav class="navbar navbar-expand-lg navbar-light">
             <a class="navbar-brand" href="#"><img src="img/logo.png" class="logo" alt="Adovee Logo"></a>
@@ -137,6 +160,23 @@
             </div>
         </div>
 
+    </div>
+</section>
+
+<section id="about">
+    <div class="about-section">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <img src="img/about-test.jpg" class="img-fluid" style="">
+            </div>
+            <div class="col-md-6 col-sm-12  padding-30">
+                <h6 class="section-heading">About us</h6>
+                <div class="section-body">
+                <p class="bold-prg">We exist especially for your comfort and ease of movement.</p>
+                <p class="prg">We are a car hire service offering comfortable, reliable and efficient car rides to and from Abuja metropolis. Professionalism is our watch word and as such we ensure our drivers perform within the required company decorum for utmost professionalism. Our cars are well equipped for comfort and durability, providing comfort on during your ride.</p>
+            </div>
+            </div>
+        </div>
     </div>
 </section>
 
