@@ -118,6 +118,10 @@ body {
     transition: .3s;
 }
 
+.privacy-section, .works-section {
+    margin-top: 70px;
+}
+
 @media (min-width: 992px) {
     /*screen more than 992px*/
     .logo {
