@@ -284,6 +284,31 @@ body {
 .nav-other{
     background-color: #fafafa;
 }
+.privacy-section,.terms-section {
+    margin: 50px 0px;
+}
+
+.other h1 {
+    font-size: 48px;
+    font-weight: 600;
+    color: #0B3C81;
+    text-transform: capitalize;
+    padding: 20px 0px;
+}
+
+.other h3 {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 20px 0px;
+}
+
+.other h4 {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 0px;
+}
+
 @media (min-width: 992px) {
     /*screen more than 992px*/
     .logo {
