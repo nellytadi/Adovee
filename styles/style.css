@@ -1,5 +1,5 @@
 body {
-
+/*color: #fafafa;*/
 }
 
 .home-section {
@@ -26,6 +26,8 @@ body {
 
 .about-section, .works-section {
     margin-top: 70px;
+    background-color: #ffffff;
+
 }
 
 .about-icon img {
@@ -82,7 +84,41 @@ body {
 .about-each{
     margin-top:35px;
 }
+.services{
+    background: #F7F7F7;
+}
+.services .section-heading{
+    padding-top: 80px;
+}
+.services .services-each{
+    margin-top: 50px;
+    background-color: #ffffff;
+    width: 300px;
+    height: 300px;
+    box-shadow: 2px 3px 6px 0px rgba(115,115,115,0.63);
+    -webkit-box-shadow: 2px 3px 6px 0px rgba(115,115,115,0.63);
+    -moz-box-shadow: 2px 3px 6px 0px rgba(115,115,115,0.63);
+}
+.services .services-icon{
+    height: 150px;
+    position: relative;
+}
+.services .services-icon img{
+    position: absolute;
+    top: 35%;
+    left: 36.66%;
+}
+.services .services-body{
+    text-align: center;
+    padding: 20px;
+}
+.services .services-body h5{
+    text-transform: capitalize;
+    font-weight: bold;
+}
+.services .services-body p{
 
+}
 .button {
     padding: 10px 30px;
     border: none;
