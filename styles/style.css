@@ -4,10 +4,10 @@ body {
 }
 
 .home-section {
-
     background: #fafafa url('../img/landing-image.png') no-repeat;
     height: 550px;
     width: 100%;
+
 }
 
 .home-section .section-content {
@@ -260,10 +260,6 @@ body {
     transition: .3s;
 }
 
-.privacy-section, .works-section {
-    margin-top: 70px;
-}
-
 .footer{
     background-color: black;
     min-height: 100px;
@@ -285,7 +281,9 @@ body {
 .footer ul a{
     color: #ffffff;
 }
-
+.nav-other{
+    background-color: #fafafa;
+}
 @media (min-width: 992px) {
     /*screen more than 992px*/
     .logo {
