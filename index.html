@@ -331,3 +331,56 @@
         crossorigin="anonymous"></script>
 </body>
 </html>
+
+1. Task done: Created an integration app that consumes two different APIs and combine the data returned.
+    Sample of new json data returned
+
+- When an existing organization id is supplied http://localhost:8081/get-info?user_id=2b10406c0f57c474fc68bd18 , The owner of the organization is also returned
+{
+"email": "ihf@ihf.org",
+"facebookEmail": "",
+"name": "Ihf",
+"phoneNumber": "08023423134",
+"photoUrl": "https://res.cloudinary.com/buls/image/upload/v1556371906/blank-profile-picture-973460_640.png",
+"twitterEmail": "",
+"orgId": "2b10406c0f57c474fc68bd18",
+"username": "ihf@ihf.org",
+"orgName": "IHF Pharmacy",
+"orgRcNumber": "1234323",
+"orgAddress": "Mabushi Area",
+"orgCountry": "ng",
+"orgCity": null,
+"orgState": "fct",
+"orgCreatedAt": "2019-12-10T15:22:41.000Z"
+}
+
+- When an existing user id is supplied http://localhost:8081/get-info?user_id=bulsyusuf@bulama.ios The organization owned is supposed to be returned,  but at this point only the user info is returned.
+{
+"email": "bulsyusuf@bulama.ios",
+"facebookEmail": "",
+"name": "Buls",
+"phoneNumber": "08036976571",
+"photoUrl": "https://res.cloudinary.com/buls/image/upload/v1556371906/blank-profile-picture-973460_640.png",
+"twitterEmail": "",
+"orgId": null,
+"username": null,
+"orgName": null,
+"orgRcNumber": null,
+"orgAddress": null,
+"orgCountry": null,
+"orgCity": null,
+"orgState": null,
+"orgCreatedAt": null
+}
+
+
+- When id supplied doesn't match any user or organization e.g http://localhost:8081/get-info?user_id=nathandauda27@gmail.com
+
+{
+"status": "404",
+"message": "No user or organization found with provided id"
+}
+
+2. Task to be done: Fix the null data returned for the users organization.
+
+3. Problems faced: App crashes when trying to call orgs and users API using scatter gather. This was caused by a bug in anypoint studio 7.3.5. Solved it by downloading a patch and placed it in the mule runtime directory.
