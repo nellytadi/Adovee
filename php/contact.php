@@ -10,7 +10,7 @@ $headers .= 'From: <webmaster@ditc.ng>' . "\r\n";
 $headers .= 'Cc: nathandauda27@gmail.com ' . "\r\n";
 
 $message = '<table><tr><td>Name of Sender: </td><td>'.$name.'</td> </tr> <tr><td>Email Address: </td><td>'.$email.'</td> <tr><tr><td>message: </td><td>'.$message.'</td> </tr> </table>';
-$mail = mail('nellytadi','Message from Adovee website',$message,$headers);
+$mail = mail('nellytadi@gmail.com','Message from Adovee website',$message,$headers);
 
 if($mail){
     header("Location: ../"+"index.php#contact"+"?status=1");
