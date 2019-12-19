@@ -278,7 +278,19 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <form class="form">
+                    <?php if(isset($_POST['status'])) { ?>
+                        <?php if($_POST['status'] == 0) { ?>
+                            <div class="alert alert-danger text-center">
+                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                <strong><?php echo $_POST['status']; ?></strong>
+                            </div>
+                        <?php }else if($_POST['status'] == 1) { ?>
+                            <div class="alert alert-success text-center">
+                                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                                <strong><?php echo $_POST['status']; ?></strong>
+                            </div>
+                        <?php }} ?>
+                    <form class="form" method="post" action="php/contact.php">
                         <div class="form-group">
                             <label>Name</label>
                             <input type="text" class="input">
@@ -304,18 +316,18 @@
 <footer id="footer">
     <div class="footer">
         <div class="container">
-        <div class="row content">
-        <div class="col-md-6 ">
-            <p>&#9400; 2019. All rights reserved. </p>
-        </div>
-        <div class="col-md-6">
-            <ul>
-                <a href="privacy_policy.html"> <li>Privacy policy</li></a>
-                <a href="terms_and_conditions.html"><li>Terms and Conditions</li></a>
-            </ul>
-        </div>
-        </div>
+            <div class="row content">
+                <div class="col-md-6 ">
+                    <p>&#9400; 2019. All rights reserved. </p>
+                </div>
+                <div class="col-md-6">
+                    <ul>
+                        <a href="privacy_policy.html"> <li>Privacy policy</li></a>
+                        <a href="terms_and_conditions.html"><li>Terms and Conditions</li></a>
+                    </ul>
+                </div>
             </div>
+        </div>
     </div>
 </footer>
 <!-- Optional JavaScript -->
