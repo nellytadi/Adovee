@@ -1,7 +1,9 @@
-body {
-    margin: 0 !important;
-    padding: 0 !important;
+html,body {
+    padding: 0;
+    margin: 0;
+
 }
+
 
 .home-section {
     background: #fafafa url('../img/landing-image.png') no-repeat;
@@ -11,7 +13,7 @@ body {
 }
 
 .home-section .section-content {
-    margin-top: 100px;
+    margin-top: 80px;
     position: relative;
     text-align: center;
     top: 10%;
@@ -29,7 +31,9 @@ body {
 .about-section, .works-section {
     margin-top: 70px;
     background-color: #ffffff;
-
+}
+.about-section .section-body{
+    padding-right: 150px;
 }
 
 .about-icon img {
@@ -62,7 +66,7 @@ body {
 
 .works-side-section {
 
-    padding: 70px;
+    padding: 50px;
     background-color: #0b3c81;
     height: 100%;
     width: 100%;
@@ -103,7 +107,7 @@ body {
 .services .services-each {
     margin-top: 50px;
     background-color: #ffffff;
-    width: 350px;
+    width: 320px;
     height: 300px;
     box-shadow: 2px 3px 6px 0px rgba(115, 115, 115, 0.63);
     -webkit-box-shadow: 2px 3px 6px 0px rgba(115, 115, 115, 0.63);
@@ -160,7 +164,9 @@ body {
     background-color: #ffffff;
     padding: 100px 0px;
 }
-
+.contact-form{
+    padding-right: 30px;
+}
 .contact .contact-links {
     padding: 15px 0px;
 }
@@ -187,21 +193,21 @@ body {
     padding-right: 20px;
 }
 
-.contact .social-icons .fa-facebook {
+.contact .social-icons .fa-facebook,.contact .social-icons .fa-twitter,.contact .social-icons .fa-instagram {
+    padding-right: 10px;
+    transition: .3s;
+    color: black;
+}
+.contact .social-icons .fa-facebook:hover {
     color:#3b5998;
-    padding-right: 10px;
-}
 
-.contact .social-icons .fa-twitter {
+}
+.contact .social-icons .fa-twitter:hover {
     color:#55acee;
-    padding-right: 10px;
-
 }
 
-.contact .social-icons .fa-instagram {
+.contact .social-icons .fa-instagram:hover {
     color:#e11a6b;
-    padding-right: 10px;
-
 }
 .contact .input{
     width: 100%;
@@ -220,7 +226,7 @@ body {
     transition: .3s;
 }
 .contact .button:hover{
-    background: #171717;
+    background: #0b3c81;
 }
 .button {
     padding: 10px 30px;
@@ -254,6 +260,7 @@ body {
 
 .navbar{
     background-color: #fafafa;
+    height: 80px;
 }
 .nav-item a:hover, .navbar-nav .active a {
     color: #0b3c81 !important;
@@ -281,8 +288,12 @@ body {
 .footer ul a{
     color: #ffffff;
 }
+.footer-center{
+    margin-left: 100px;
+}
 .nav-other{
     background-color: #fafafa;
+    height: 80px;
 }
 .privacy-section,.terms-section {
     margin: 50px 0px;
@@ -292,7 +303,6 @@ body {
     font-size: 48px;
     font-weight: 600;
     color: #0B3C81;
-    text-transform: capitalize;
     padding: 20px 0px;
 }
 
@@ -307,6 +317,45 @@ body {
     font-size: 20px;
     font-weight: bold;
     padding: 15px 0px;
+}
+.scroll-top {
+    display: none;
+    background-color: #0061c1;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    margin: 30px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s;
+    z-index: 1000;
+}
+
+.scroll-top:hover {
+    cursor: pointer;
+    background-color: #0b3c81;
+}
+
+.scroll-top:active {
+    background-color: #0b3c81;
+}
+
+.scroll-top::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1em;
+    line-height: 50px;
+    color: #fff;
+}
+.show{
+    display: block;
+}
+.margin-right-0{
+    margin-right: 0px;
 }
 
 @media (min-width: 992px) {
@@ -326,14 +375,16 @@ body {
 @media (max-width: 992px) {
     /*screens less than 992 px*/
     .nav-menu {
-        position: absolute;
         background-color: #fafafa;
         z-index: 2;
         width: 100%;
-
+        margin-top: -20px;
     }
     .home-section .section-content h1{
         font-size: 38px;
+    }
+    .about-section .section-body{
+        padding-right: 0px;
     }
 }
 
@@ -344,6 +395,9 @@ body {
 
     .car {
         display: none;
+    }
+    .footer-center{
+        margin-left: 0px;
     }
 }
 
