@@ -1,4 +1,3 @@
-<?php session_start();?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -28,24 +27,19 @@
             <div class="collapse navbar-collapse ml-auto" id="navbarNav">
                 <ul class="navbar-nav ml-auto nav-menu">
                     <li class="nav-item active">
-                        <a class="nav-link" id="scroll-home" data-toggle="collapse" data-target=".navbar-collapse.show"
-                           href="#home">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#home" id="scroll-home">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="scroll-about" data-toggle="collapse" data-target=".navbar-collapse.show"
-                           href="#about">About</a>
+                        <a class="nav-link" href="#about" id="scroll-about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link scroll-works" id="scroll-works"  data-toggle="collapse" data-target=".navbar-collapse.show"
-                           href="#how_it_works">How it works</a>
+                        <a class="nav-link" href="#how_it_works" id="scroll-works">How it works</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="scroll-services" data-toggle="collapse"
-                           data-target=".navbar-collapse.show" href="#services">Services</a>
+                        <a class="nav-link" href="#services" id="scroll-services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="scroll-contact" data-toggle="collapse"
-                           data-target=".navbar-collapse.show" href="#contact">Contact</a>
+                        <a class="nav-link" href="#contact" id="scroll-contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -58,7 +52,7 @@
 
             </div>
             <div class="sub-content">
-                <a class="scroll-works" href="#how_it_works" ><button class="button blue-button">How it works</button></a>
+                <button class="button blue-button">How it works</button>
             </div>
         </div>
 
@@ -67,9 +61,9 @@
 
 <section id="about">
     <div class="about-section">
-        <div class="row margin-right-0">
+        <div class="row">
             <div class="col-md-6 col-sm-12">
-                <img src="img/about-test.jpg" alt="About Adovee" class="img-fluid">
+                <img src="img/about-test.jpg" class="img-fluid" style="">
             </div>
             <div class="col-md-6 col-sm-12  padding-30">
                 <h6 class="section-heading">About us</h6>
@@ -85,82 +79,74 @@
     </div>
 </section>
 
-
 <section id="how_it_works">
     <div class="works-section">
-        <div class="container">
-            <div class="row margin-right-0">
-                <div class="car col-lg-6 col-md-12 col-sm-12">
-                    <img src="img/ccar.png" alt="How adovee works">
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12">
-                    <div class="works-side-section">
-                        <h6 class="section-heading white">How it works</h6>
-                        <div class="section-body">
-                            <p class="bold-prg">We’ve built a system that will be easy and convenient for all
-                                customers.</p>
+        <div class="row">
+            <div class="car col-lg-6 col-md-12 col-sm-12">
+                <img src="img/ccar.png">
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="works-side-section">
+                    <h6 class="section-heading white">How it works</h6>
+                    <div class="section-body">
+                        <p class="bold-prg">We’ve built a system that will be easy and convenient for all customers.</p>
 
-                            <div class="about-each">
-                                <div class="row">
-                                    <div class="col-md-2 col-sm-2 about-icon">
-                                        <img src="img/location-on-map.png" alt="Locate">
+                        <div class="about-each">
+                            <div class="row">
+                                <div class="col-md-2 col-sm-2 about-icon">
+                                    <img src="img/location-on-map.png">
+                                </div>
+                                <div class=" col-md-10 col-sm-10 content-beside-icon">
+                                    <div class="about-step">step 1</div>
+                                    <div class="about-locate">
+                                        Locate
                                     </div>
-                                    <div class=" col-md-10 col-sm-10 content-beside-icon">
-                                        <div class="about-step">step 1</div>
-                                        <div class="about-locate">
-                                            Locate
-                                        </div>
-                                        <div class="about-desc">
-                                            Arrive at the International Airport and by located by our professional
-                                            drivers.
-                                        </div>
+                                    <div class="about-desc">
+                                        Arrive at the International Airport and by located by our professional drivers.
                                     </div>
                                 </div>
                             </div>
-
-                            <div class="about-each">
-                                <div class="row">
-                                    <div class="col-md-2 col-sm-2 about-icon">
-                                        <img src="img/pick-up.png" alt="Pick up">
-                                    </div>
-                                    <div class=" col-md-10 col-sm-10 content-beside-icon">
-                                        <div class="about-step">step 2</div>
-                                        <div class="about-locate">
-                                            Pick-up
-                                        </div>
-                                        <div class="about-desc">
-                                            Arrive at the International Airport and by located by our professional
-                                            drivers.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="about-each">
-                                <div class="row">
-                                    <div class="col-md-2 col-sm-2 about-icon">
-                                        <img src="img/drop-of.png" alt="Drop off">
-                                    </div>
-                                    <div class=" col-md-10 col-sm-10 content-beside-icon">
-                                        <div class="about-step">step 3</div>
-                                        <div class="about-locate">
-                                            drop-off
-                                        </div>
-                                        <div class="about-desc">
-                                            Arrive at the International Airport and by located by our professional
-                                            drivers.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
+
+                        <div class="about-each">
+                            <div class="row">
+                                <div class="col-md-2 col-sm-2 about-icon">
+                                    <img src="img/pick-up.png">
+                                </div>
+                                <div class=" col-md-10 col-sm-10 content-beside-icon">
+                                    <div class="about-step">step 2</div>
+                                    <div class="about-locate">
+                                        Pick-up
+                                    </div>
+                                    <div class="about-desc">
+                                        Arrive at the International Airport and by located by our professional drivers.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-each">
+                            <div class="row">
+                                <div class="col-md-2 col-sm-2 about-icon">
+                                    <img src="img/drop-of.png">
+                                </div>
+                                <div class=" col-md-10 col-sm-10 content-beside-icon">
+                                    <div class="about-step">step 3</div>
+                                    <div class="about-locate">
+                                        drop-off
+                                    </div>
+                                    <div class="about-desc">
+                                        Arrive at the International Airport and by located by our professional drivers.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
 
 <section id="services">
     <div class="services">
@@ -169,17 +155,19 @@
                 <h6 class="section-heading">Services we provide</h6>
                 <div class="section-body">
                     <p class="bold-prg">
-                        Call us family or friend. Regardless, there is always someone waiting on you like you deserve.
+                        Good things happen when people can move, whether across town or towards their dreams.
+                        Opportunities
+                        appear, open up, become reality.
                     </p>
                 </div>
             </div>
 
-            <div class="row justify-content-center ">
+            <div class="row">
 
-                <div class="col-md-4 mx-auto">
+                <div class="col-md-4">
                     <div class="services-each">
                         <div class="services-icon">
-                            <img src="img/navigation.png" alt="Flexible movement">
+                            <img src="img/navigation.png">
                         </div>
                         <div class="services-body">
                             <h5>flexible movement</h5>
@@ -187,10 +175,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mx-auto">
+                <div class="col-md-4">
                     <div class="services-each">
                         <div class="services-icon">
-                            <img src="img/clock.png" alt="Fast response time">
+                            <img src="img/clock.png">
                         </div>
                         <div class="services-body">
                             <h5>fast response time</h5>
@@ -198,10 +186,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mx-auto">
+                <div class="col-md-4">
                     <div class="services-each">
                         <div class="services-icon">
-                            <img src="img/money.png" alt="Predetermined amount">
+                            <img src="img/money.png">
                         </div>
                         <div class="services-body">
                             <h5>predetermined amount</h5>
@@ -209,10 +197,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mx-auto">
+                <div class="col-md-4">
                     <div class="services-each">
                         <div class="services-icon">
-                            <img src="img/convenience.png" alt="Convenience">
+                            <img src="img/money.png">
                         </div>
                         <div class="services-body">
                             <h5>convenience </h5>
@@ -221,10 +209,10 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 mx-auto">
+                <div class="col-md-4">
                     <div class="services-each">
                         <div class="services-icon">
-                            <img src="img/driver-license.png" alt="Professional drivers">
+                            <img src="img/driver-license.png">
                         </div>
                         <div class="services-body">
                             <h5> professional drivers </h5>
@@ -233,10 +221,10 @@
                     </div>
                 </div>
 
-                <div class="col-md-4 mx-auto">
+                <div class="col-md-4">
                     <div class="services-each">
                         <div class="services-icon">
-                            <img src="img/point-a-to-b.png" alt="Prompt pick up and drop off">
+                            <img src="img/driver-license.png">
                         </div>
                         <div class="services-body">
                             <h5> prompt pick-up & drop off </h5>
@@ -252,6 +240,7 @@
 </section>
 <section id="convinced">
     <div class="convinced">
+        <img src="img/rectangle.jpg" class="img-fluid convinced-img">
         <div class="content">
             <h5>Convinced? let’s take you on your ride with us.</h5>
             <p>Its easy to talk about about. Let’s show you how much your riding experience means to us.</p>
@@ -283,56 +272,35 @@
                                 <a href="#"><i class="fa fa-twitter"></i></a>
                             </span>
                             <span class="social-icons">
-                                <a href="https://instagram.com/adovee.ng?igshid=o66dbevjym6c" target="_blank"> <i
-                                        class="fa fa-instagram"></i></a>
+                                <a href="https://instagram.com/adovee.ng?igshid=o66dbevjym6c" target="_blank"> <i class="fa fa-instagram"></i></a>
                             </span>
                         </p>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <?php if (isset($_SESSION['status'])) { ?>
-                        <?php if ($_SESSION['status'] == 0) { ?>
-                            <div class="alert alert-danger text-center">
-                                <button type="button" class="close" data-dismiss="alert"
-                                        aria-hidden="true">&times;</button>
-                                <strong><?php echo 'Your message not sent please try again'; ?></strong>
-                            </div>
-                            <?php
-                            unset($_SESSION['status']);
-                        } else if ($_SESSION['status'] == 1) { ?>
-                            <div class="alert alert-success text-center">
-                                <button type="button" class="close" data-dismiss="alert"
-                                        aria-hidden="true">&times;</button>
-                                <strong><?php echo 'Your message was sent successfully'; ?></strong>
-                            </div>
-                        <?php }
-                        unset($_SESSION['status']);
-                    } ?>
-                    <div class="contact-form">
-                        <form class="form" method="post" action="mail/contact.php">
-                            <div class="form-group">
-                                <label>Name</label>
-                                <input type="text" class="input" name="name">
-                            </div>
-                            <div class="form-group">
+                                        <form class="form" method="post" action="php/contact.php">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" class="input">
+                        </div>
+                        <div class="form-group">
 
-                                <label>Email</label>
-                                <input type="email" class="input" name="email">
-                            </div>
-                            <div class="form-group">
-                                <label>Message</label>
-                                <textarea name="message" class="input textarea"></textarea>
-                            </div>
+                            <label>Email</label>
+                            <input type="email" class="input">
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea name="message" class="input textarea"></textarea>
+                        </div>
 
-                            <input type="submit" class="button" value="submit" name="submit">
-                        </form>
-                    </div>
+                        <input type="submit" class="button" value="submit">
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<a class="scroll-top"></a>
+
 <footer id="footer">
     <div class="footer">
         <div class="container">
@@ -341,32 +309,26 @@
                     <p>&#9400; 2019. All rights reserved. </p>
                 </div>
                 <div class="col-md-6">
-                    <div class="footer-center">
-                        <ul>
-                            <a href="privacy_policy.html">
-                                <li>Privacy policy</li>
-                            </a>
-                            <a href="terms_and_conditions.html">
-                                <li>Terms and Conditions</li>
-                            </a>
-                        </ul>
-                    </div>
+                    <ul>
+                        <a href="privacy_policy.html"> <li>Privacy policy</li></a>
+                        <a href="terms_and_conditions.html"><li>Terms and Conditions</li></a>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
 </footer>
 <!-- Optional JavaScript -->
+<script src="js/index.js"></script>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
-
-<script src="js/index.js" type="text/javascript"></script>
-
 </body>
 </html>

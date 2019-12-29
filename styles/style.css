@@ -1,146 +1,144 @@
-html,body {
+body, html {
     padding: 0;
-    margin: 0;
-
+    margin: 0
 }
 
-
 .home-section {
-    background: #fafafa url('../img/landing-image.png') no-repeat;
+    background: #fafafa url(../img/landing-image.png) no-repeat;
     height: 550px;
-    width: 100%;
-
+    width: 100%
 }
 
 .home-section .section-content {
     margin-top: 80px;
     position: relative;
     text-align: center;
-    top: 10%;
+    top: 10%
 }
 
 .home-section .section-content h1 {
-    font-weight: bold;
-    font-size: 54px;
+    font-weight: 700;
+    font-size: 54px
 }
 
 .home-section .section-content .sub-content {
-    margin-top: 20px;
+    margin-top: 20px
 }
 
 .about-section, .works-section {
     margin-top: 70px;
-    background-color: #ffffff;
+    background-color: #fff
 }
-.about-section .section-body{
-    padding-right: 150px;
+
+.about-section .section-body {
+    padding-right: 150px
 }
 
 .about-icon img {
     width: 80px;
-    margin-top: 20px;
+    margin-top: 20px
 }
 
 .content-beside-icon {
-    padding-left: 35px;
+    padding-left: 35px
 }
 
 .section-heading {
-    color: #0B3C81;
+    color: #0b3c81;
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 800;
-    margin-bottom: 30px;
+    margin-bottom: 30px
 }
 
 .bold-prg {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 700
 }
 
 .prg {
     font-size: 20px;
     line-height: 38px;
-    padding-top: 20px;
+    padding-top: 20px
 }
 
 .works-side-section {
-
     padding: 50px;
     background-color: #0b3c81;
-    height: 100%;
-    width: 100%;
-    color: #ffffff;
+    margin: 0px 0px 40px 0px;
+    color: #fff;
 }
 
 .about-step {
     text-transform: uppercase;
     font-size: 12px;
-    font-weight: bold;
+    font-weight: 700
 }
 
 .about-locate {
     text-transform: capitalize;
     font-size: 20px;
     padding-top: 10px;
-    font-weight: bold;
+    font-weight: 700
 }
 
 .about-desc {
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 16px
 }
 
 .about-each {
-    margin-top: 35px;
+    margin-top: 35px
 }
 
 .services {
-    background: #F7F7F7;
-    padding-bottom: 100px;
+    background: #f7f7f7;
+    padding-bottom: 100px
 }
 
 .services .section-heading {
-    padding-top: 80px;
+    padding-top: 80px
 }
 
 .services .services-each {
     margin-top: 50px;
-    background-color: #ffffff;
-    width: 320px;
+    background-color: #fff;
     height: 300px;
-    box-shadow: 2px 3px 6px 0px rgba(115, 115, 115, 0.63);
-    -webkit-box-shadow: 2px 3px 6px 0px rgba(115, 115, 115, 0.63);
-    -moz-box-shadow: 2px 3px 6px 0px rgba(115, 115, 115, 0.63);
+    transition: .3s;
+
+}
+
+.services .services-each:hover {
+    box-shadow: 2px 3px 6px 0 rgba(115, 115, 115, .63);
+    -webkit-box-shadow: 2px 3px 6px 0 rgba(115, 115, 115, .63);
+    -moz-box-shadow: 2px 3px 6px 0 rgba(115, 115, 115, .63)
 }
 
 .services .services-icon {
     height: 150px;
-    position: relative;
+    position: relative
 }
 
 .services .services-icon img {
     position: absolute;
     top: 35%;
-    left: 36.66%;
+    left: 36.66%
 }
 
 .services .services-body {
     text-align: center;
-    padding: 20px;
+    padding: 20px
 }
 
 .services .services-body h5 {
     text-transform: capitalize;
-    font-weight: bold;
-}
-
-.services .services-body p {
-
+    font-weight: 700
 }
 
 .convinced {
+    background: #fafafa url(../img/rectangle.jpg) no-repeat;
     position: relative;
+    height: 300px;
 }
 
 .convinced .content {
@@ -148,176 +146,197 @@ html,body {
     position: absolute;
     top: 35%;
     width: 100%;
-    color: #ffffff;
+    color: #fff
 }
 
 .convinced .content h5 {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 700
 }
 
 .convinced .content p {
-    padding: 10px 10px 0px 10px;
+    padding: 10px 10px 0 10px
 }
 
 .contact {
-    background-color: #ffffff;
-    padding: 100px 0px;
+    background-color: #fff;
+    padding: 100px 30px;
 }
-.contact-form{
-    padding-right: 30px;
+
+.contact-form {
+    padding-right: 30px
 }
+
 .contact .contact-links {
-    padding: 15px 0px;
+    padding: 15px 0
 }
 
 .contact .link {
-    line-height: 10px;
+    line-height: 10px
 }
 
 .contact .link a {
     color: #000;
     font-size: 14px;
     font-weight: 600;
-    transition: .3s;
+    transition: .3s
 }
 
 .contact .link a:hover {
     color: #0e5881;
-    text-decoration: none;
-
+    text-decoration: none
 }
 
 .contact .follow {
     font-size: 14px;
-    padding-right: 20px;
+    padding-right: 20px
 }
 
-.contact .social-icons .fa-facebook,.contact .social-icons .fa-twitter,.contact .social-icons .fa-instagram {
+.contact .social-icons .fa-facebook, .contact .social-icons .fa-instagram, .contact .social-icons .fa-twitter {
     padding-right: 10px;
     transition: .3s;
-    color: black;
+    color: #000
 }
-.contact .social-icons .fa-facebook:hover {
-    color:#3b5998;
 
+.contact .social-icons .fa-facebook:hover {
+    color: #3b5998
 }
+
 .contact .social-icons .fa-twitter:hover {
-    color:#55acee;
+    color: #55acee
 }
 
 .contact .social-icons .fa-instagram:hover {
-    color:#e11a6b;
+    color: #e11a6b
 }
-.contact .input{
+
+.contact .input {
     width: 100%;
     border: none;
-    border: 2px solid #000000;
-    min-height: 50px;
+    border: 2px solid #000;
+    min-height: 50px
 }
-.contact label{
-    font-weight: 600;
+
+.contact label {
+    font-weight: 600
 }
-.contact .textarea{
+
+.contact .textarea {
     min-height: 100px;
+    resize: none;
 }
-.contact .button{
+
+.contact .button {
     background: #000;
-    transition: .3s;
+    transition: .3s
 }
-.contact .button:hover{
-    background: #0b3c81;
+
+.contact .button:hover {
+    background: #0b3c81
 }
+
 .button {
     padding: 10px 30px;
     border: none;
     background: #0b3c81;
-    color: #ffffff;
+    color: #fff;
     text-transform: uppercase;
-    font-weight: 600;
-
+    font-weight: 600
 }
 
 .nav-menu {
-    margin-right: 100px;
+    margin-right: 100px
 }
 
 .nav-link {
     font-size: 18px;
     font-weight: 600;
-    color: #000000 !important;
+    color: #000 !important;
     text-align: center;
-    text-transform: capitalize;
+    text-transform: capitalize
 }
 
 .blue {
-    color: #0b3c81;
+    color: #0b3c81
 }
 
 .white {
-    color: white;
+    color: #fff
 }
 
-.navbar{
+.navbar {
     background-color: #fafafa;
-    height: 80px;
+    height: 80px
 }
+
 .nav-item a:hover, .navbar-nav .active a {
     color: #0b3c81 !important;
-    transition: .3s;
+    transition: .3s
 }
 
-.footer{
-    background-color: black;
+.footer {
+    background-color: #000;
     min-height: 100px;
-    color: white;
+    color: #fff
 }
-.footer .content{
-    padding-top: 30px;
+
+.footer .content {
+    padding-top: 40px
 }
-.footer ul{
+
+.footer ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    overflow: hidden
 }
-.footer ul li{
+
+.footer ul li {
     float: left;
-    padding-right: 30px;
+    padding-right: 30px
 }
-.footer ul a{
-    color: #ffffff;
+
+.footer ul a {
+    color: #fff
 }
-.footer-center{
-    margin-left: 100px;
+
+.footer-center {
+    float: right
 }
-.nav-other{
+
+.nav-other {
     background-color: #fafafa;
-    height: 80px;
+    height: 80px
 }
-.privacy-section,.terms-section {
-    margin: 50px 0px;
+
+.privacy-section, .terms-section {
+    margin: 50px 0
+}
+
+.logo-center {
+    padding-left: 100px;
 }
 
 .other h1 {
     font-size: 48px;
     font-weight: 600;
-    color: #0B3C81;
-    padding: 20px 0px;
+    color: #0b3c81;
+    padding: 20px 0
 }
 
 .other h3 {
     font-size: 30px;
     font-weight: 600;
     text-transform: capitalize;
-    padding: 20px 0px;
+    padding: 20px 0
 }
 
 .other h4 {
     font-size: 20px;
-    font-weight: bold;
-    padding: 15px 0px;
+    font-weight: 700;
+    padding: 15px 0
 }
+
 .scroll-top {
     display: none;
     background-color: #0061c1;
@@ -330,81 +349,128 @@ html,body {
     bottom: 30px;
     right: 30px;
     transition: background-color .3s;
-    z-index: 1000;
+    z-index: 1000
 }
 
 .scroll-top:hover {
     cursor: pointer;
-    background-color: #0b3c81;
+    background-color: #0b3c81
 }
 
 .scroll-top:active {
-    background-color: #0b3c81;
+    background-color: #0b3c81
 }
 
 .scroll-top::after {
     content: "\f077";
     font-family: FontAwesome;
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
     font-size: 1em;
     line-height: 50px;
-    color: #fff;
+    color: #fff
 }
-.show{
-    display: block;
+
+.show {
+    display: block
 }
-.margin-right-0{
-    margin-right: 0px;
+
+.margin-right-0 {
+    margin-right: 0
 }
 
 @media (min-width: 992px) {
-    /*screen more than 992px*/
     .logo {
-
-        margin-left: 100px;
+        margin-left: 100px
     }
 
     .nav-link {
-        padding-right: 2.5rem !important;
-
+        padding-right: 2.5rem !important
     }
-
 }
 
 @media (max-width: 992px) {
-    /*screens less than 992 px*/
     .nav-menu {
         background-color: #fafafa;
         z-index: 2;
         width: 100%;
-        margin-top: -20px;
+        margin-top: -20px
     }
-    .home-section .section-content h1{
-        font-size: 38px;
+
+    .home-section .section-content h1 {
+        font-size: 38px
     }
-    .about-section .section-body{
-        padding-right: 0px;
+
+    .about-section .section-body {
+        padding-right: 0
     }
 }
 
 @media (max-width: 768px) {
     .padding-30 {
-        padding: 30px;
+        padding: 30px
     }
 
     .car {
-        display: none;
+        display: none
     }
-    .footer-center{
-        margin-left: 0px;
+
+    .home-section {
+        height: 450px;
+        background: none;
+        background-color: #fafafa;
+
+    }
+
+    .home-section .section-content {
+        padding-top: 50px;
+    }
+
+    .footer-center {
+        float: none
+    }
+
+    .logo-center {
+        padding-left: 0px;
+    }
+
+    .convinced-img {
+        height: 200px;
+    }
+
+    .convinced .content {
+        top: 20%;
     }
 }
 
 @media (max-width: 576px) {
-
     .content-beside-icon {
-        margin-top: 20px;
+        margin-top: 20px
     }
 
+    .works-side-section {
+        padding: 20px;
+
+    }
+
+    .about-icon img {
+        width: 60px;
+        margin-top: 0px;
+    }
+
+    .content-beside-icon {
+        padding-left: 25px;
+    }
+
+    .bold-prg {
+        font-size: 20px;
+    }
+
+    .prg {
+        font-size: 18px;
+    }
+
+    .contact {
+        padding: 50px 15px;
+    }
 }
