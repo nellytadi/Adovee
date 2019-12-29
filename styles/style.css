@@ -61,7 +61,9 @@ body, html {
     line-height: 38px;
     padding-top: 20px
 }
-
+.works-section{
+    background: #fafafa url(../img/ccar.png) no-repeat;
+}
 .works-side-section {
     padding: 50px;
     background-color: #0b3c81;

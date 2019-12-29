@@ -90,10 +90,8 @@
     <div class="works-section">
         <div class="container">
             <div class="row margin-right-0">
-                <div class="car col-lg-6 col-md-12 col-sm-12">
-                    <img src="img/ccar.png" alt="How adovee works">
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12">
+
+                <div class="col-lg-6 col-md-12 col-sm-12 ml-auto">
                     <div class="works-side-section">
                         <h6 class="section-heading white">How it works</h6>
                         <div class="section-body">
