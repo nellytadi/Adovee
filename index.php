@@ -1,4 +1,4 @@
-<?php session_start();?>
+<?php session_start(); ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -36,7 +36,8 @@
                            href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link scroll-works" id="scroll-works"  data-toggle="collapse" data-target=".navbar-collapse.show"
+                        <a class="nav-link scroll-works" id="scroll-works" data-toggle="collapse"
+                           data-target=".navbar-collapse.show"
                            href="#how_it_works">How it works</a>
                     </li>
                     <li class="nav-item">
@@ -58,7 +59,9 @@
 
             </div>
             <div class="sub-content">
-                <a class="scroll-works" href="#how_it_works" ><button class="button blue-button">How it works</button></a>
+                <a class="scroll-works" href="#how_it_works">
+                    <button class="button blue-button">How it works</button>
+                </a>
             </div>
         </div>
 
@@ -68,17 +71,18 @@
 <section id="about">
     <div class="about-section">
         <div class="row margin-right-0">
-            <div class="col-md-6 col-sm-12">
+            <div class="col-md-6 col-sm-12 about-side">
                 <img src="img/about-test.jpg" alt="About Adovee" class="img-fluid">
             </div>
-            <div class="col-md-6 col-sm-12  padding-30">
+            <div class="col-md-6 col-sm-12 about-side-right">
                 <h6 class="section-heading">About us</h6>
                 <div class="section-body">
                     <p class="bold-prg">We exist especially for your comfort and ease of movement.</p>
                     <p class="prg">We are a car hire service offering comfortable, reliable and efficient car rides to
-                        and from Abuja metropolis. Professionalism is our watch word and as such we ensure our drivers
-                        perform within the required company decorum for utmost professionalism. Our cars are well
-                        equipped for comfort and durability, providing comfort on during your ride.</p>
+                        and from the Nnamdi Azikiwe International Airport, Abuja. Professionalism is our watch word and
+                        as such we ensure our drivers perform within the required company decorum for utmost
+                        professionalism. Our cars are well equipped for comfort and durability, providing comfort during
+                        your ride.</p>
                 </div>
             </div>
         </div>
@@ -251,8 +255,8 @@
 <section id="convinced">
     <div class="convinced">
         <div class="content">
-            <h5>Convinced? let’s take you on your ride with us.</h5>
-            <p>Its easy to talk about about. Let’s show you how much your riding experience means to us.</p>
+            <h5>Convinced, let’s take you on a ride with us.</h5>
+            <p>Its easy to talk about. Let’s show you how much your riding experience means to us.</p>
         </div>
     </div>
 </section>
@@ -270,7 +274,7 @@
                         </p>
                         <div class="contact-links">
                             <p class="link"><a href="mailto:contact@adovee.com.ng"> contact@adovee.com.ng</a></p>
-                            <p class="link"><a href="tel:+2347001234567 ">+234 700 123 4567 </a></p>
+                            <p class="link"><a href="tel:+234 705 130 6990 ">+234 705 130 6990 </a></p>
                         </div>
                         <p>
                             <span class="follow">Follow Us</span>
@@ -278,7 +282,8 @@
                                 <a href="#"><i class="fa fa-facebook"></i></a>
                             </span>
                             <span class="social-icons">
-                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="https://twitter.com/AdoveeNg?s=09" target="_blank"><i
+                                        class="fa fa-twitter"></i></a>
                             </span>
                             <span class="social-icons">
                                 <a href="https://instagram.com/adovee.ng?igshid=o66dbevjym6c" target="_blank"> <i

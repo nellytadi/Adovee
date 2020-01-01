@@ -24,7 +24,12 @@ body, html {
 .home-section .section-content .sub-content {
     margin-top: 20px
 }
-
+.about-side{
+    padding-right: 0;
+}
+.about-side-right{
+    padding: 10px 30px;
+}
 .about-section, .works-section {
     margin-top: 70px;
     background-color: #fff
@@ -446,6 +451,13 @@ body, html {
 }
 
 @media (max-width: 576px) {
+    .logo{
+        margin-left: -15px;
+    }
+    .navbar {
+        height: 100px;
+        margin-top: -20px;
+    }
     .content-beside-icon {
         margin-top: 20px
     }
@@ -474,5 +486,8 @@ body, html {
 
     .contact {
         padding: 50px 15px;
+    }
+    .footer{
+        padding-bottom: 40px;
     }
 }
